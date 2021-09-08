@@ -40,8 +40,8 @@ def send_message(text, chat_id):
 text, chat = get_last_chat_id_and_text(get_updates())
 
 
-id=[ "129289", "129290","129278", "129283", "129310", "129311", "129304", "129306", "129197", "129198", "129199", "129200", "129201"]  
-lop= ["LTNC", "LTNC", "Nhúng", "Nhúng", "LT Ứng dụng DĐ", "LT Ứng dụng DĐ", "Viễn thám", "Xử lý ảnh số", "Điện tử số",  "Điện tử số",  "Điện tử số",  "Điện tử số",  "Điện tử số"]
+id=["129289","129290","129278","129283","129304","129305","129306","129197","129200","129198","128204","129201","129199","128203","129192","129193","129194","129195","129196","128413","129166","129167","129176","129177","129186","129187","129229"]  
+lop= ["Lập trình nâng cao", "Lập trình nâng cao", "Hệ thống nhúng", "Hệ thống nhúng", "Viễn thám", "Xử lý ảnh số", "Xử lý ảnh số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++"]
 
 ky="20211"
 
