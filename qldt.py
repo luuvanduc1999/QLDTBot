@@ -40,8 +40,11 @@ def send_message(text, chat_id):
 text, chat = get_last_chat_id_and_text(get_updates())
 
 
-id=["129289","129290","129278","129283","129304","129305","129306","129197","129200","129198","128204","129201","129199","128203","129192","129193","129194","129195","129196","128413","129166","129167","129176","129177","129186","129187","129229"]  
-lop= ["Lập trình nâng cao", "Lập trình nâng cao", "Hệ thống nhúng", "Hệ thống nhúng", "Viễn thám", "Xử lý ảnh số", "Xử lý ảnh số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++"]
+id=["129289","129290","129278","129283","129304","129305","129306","129197","129200","129198","128204","129201","129199","128203","129192","129193","129194","129195","129196","128413","129166","129167","129176","129177","129186","129187","129229"]
+
+x=0
+
+lop = ["Lập trình nâng cao", "Lập trình nâng cao", "Hệ thống nhúng", "Hệ thống nhúng", "Viễn thám", "Xử lý ảnh số", "Xử lý ảnh số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Anten và truyền sóng", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++"]
 
 ky="20211"
 
@@ -59,6 +62,18 @@ headers = {
 }
 ix=0
 print("Start...")
+send_message("Start..", chat)
+send_message("testing...", chat)
+raw_data = "7|0|10|https://qldt.hust.ed.vn/soicteducationstudent/|64A3D74A7F505C8AE0C51B09092739A7|com.soict.edu.core.client.DataService|searchClasses|java.lang.String/2004016611|java.lang.Long/4227064769|java.util.List|"+ky+"|java.util.Arrays$ArrayList/2507071751|"+"129310"+"|1|2|3|4|4|5|6|6|7|8|6|QzaRkAAAA|6|P__________|9|1|5|10|"
+auth_url='https://qldt.hust.edu.vn/soicteducationstudent/data'
+request = requests.post(auth_url,headers=headers, data=raw_data)
+if (request.text.find("Teacher")>0):
+    print("Test thành công.")
+    send_message("Test thành công.", chat)
+else:
+    print("Test thất bại.")
+    send_message("Test thất bại.", chat)
+send_message("Bắt đầu check..", chat)
 while (1):
     for i in range(0,len(id)):
         raw_data = "7|0|10|https://qldt.hust.ed.vn/soicteducationstudent/|64A3D74A7F505C8AE0C51B09092739A7|com.soict.edu.core.client.DataService|searchClasses|java.lang.String/2004016611|java.lang.Long/4227064769|java.util.List|"+ky+"|java.util.Arrays$ArrayList/2507071751|"+id[i]+"|1|2|3|4|4|5|6|6|7|8|6|QzaRkAAAA|6|P__________|9|1|5|10|"
