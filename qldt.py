@@ -43,7 +43,7 @@ text, chat = get_last_chat_id_and_text(get_updates())
 id=[ "129289", "129290","129278", "129283", "129310", "129311", "129304", "129306", "129197", "129198", "129199", "129200", "129201"]  
 lop= ["LTNC", "LTNC", "Nhúng", "Nhúng", "LT Ứng dụng DĐ", "LT Ứng dụng DĐ", "Viễn thám", "Xử lý ảnh số", "Điện tử số",  "Điện tử số",  "Điện tử số",  "Điện tử số",  "Điện tử số"]
 
-ky="20202"
+ky="20211"
 
 headers = {
     "accept": "*/*",
