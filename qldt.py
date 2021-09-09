@@ -40,11 +40,11 @@ def send_message(text, chat_id):
 text, chat = get_last_chat_id_and_text(get_updates())
 
 
-id=["129289","129290","129278","129283","129305","129306","129197","129200","129198","128204","129201","129199","128203","129192","128413","129166","129167","129176","129177","129186","129187","129229"]
+id=["129289","129290","129278","129283","129305","129306","129197","129200","129198","128204","129201","129199","128413","129166","129167","129176","129177","129186","129187","129229"]
 
 x=0
 
-lop = ["Lập trình nâng cao", "Lập trình nâng cao", "Hệ thống nhúng", "Hệ thống nhúng", "Xử lý ảnh số", "Xử lý ảnh số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số",  "Anten và truyền sóng", "Anten và truyền sóng", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++"]
+lop = ["Lập trình nâng cao", "Lập trình nâng cao", "Hệ thống nhúng", "Hệ thống nhúng", "Xử lý ảnh số", "Xử lý ảnh số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số", "Điện tử số",  "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++", "Kỹ thuật lập trình C/C++"]
 
 ky="20211"
 
@@ -83,6 +83,9 @@ while (1):
             print(lop[i]," - ", id[i]," đã có phân công giáo viên.")
             send_message(lop[i]+" - "+ id[i] +" đã có phân công giáo viên.", chat)
             print(request.text)
+            del lop[i]
+            del id[i]
+
     time.sleep(900)
     ix=ix+15
     if (ix==60):
